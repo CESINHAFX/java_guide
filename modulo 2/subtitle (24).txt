@@ -1,0 +1,47 @@
+Welcome to managing
+GitHub projects. In this video, you'll identify the common roles
+of version control or Git in the project and list Git commands to communicate
+with other developers. You already know that GitHub is a popular platform for version control and
+project management. You require managing
+your GitHub projects for effective collaboration
+and project organization. Multiple roles are involved
+in managing a project; a developer, an integrator, and a repository administrator. A developer working as a participant in a group
+project needs to learn how to communicate with others
+and to use these commands in addition to the ones needed
+by a standalone developer. When working with Git, you can use Git commands or desktop tools such
+as GitHub Desktop. Git clone is used to create
+a copy from upstream, a remote shared repository that the developer
+wants to work on. Git pull and git fetch
+are used to pull or fetch the repository from origin to keep up to date
+with the upstream. Git push is used
+to push commits to the shared repository
+if you adopt a concurrent versioning system for the repository workflow, and git request, pull creates a summary of changes for
+your upstream to pull. An integrator in a group project receives changes made by others, reviews and integrates them, responds to pull requests, and publishes the result
+for others to use. Integrators use the
+following commands in addition to the ones
+needed by participants. Git pull helps you merge with
+your trusted lieutenants. Git revert will undo
+any botched commits. Git push will help to publish the project from the local
+repo to the remote repo. The repository administrator structures how the repository is organized and how users
+interact with the repository. They also manage communities, asset types, relationships,
+categories and attributes. A repository administrator sets up and maintains access to the
+repository for developers. They also configure
+the servers needed for accessing the web services
+and documentation, define email and index settings, and manage the look and
+feel of the application. Repository admins can use
+GitHub actions to automate software workflows including
+continuous integration and continuous delivery or CICD. Let's recap. In this video, you learned that multiple roles are involved in
+managing a project; developer, integrator and
+repository administrator. Each role uses
+different Git commands to communicate with
+collaborators. A developer working in a group project uses
+commands like git clone, git pull, git fetch, git push, and git request pull. In addition to the ones needed
+by a standalone developer, an integrator in a
+group project reviews and integrates changes
+made by others. Integrators use
+commands like git pull, git revert, and git push, in addition to the ones
+needed by participants. The repository administrators structure how the repository is organized and how users
+interact with the repository. They also configure
+the servers needed for accessing the web services
+and documentation, define email and index settings, and manage the look and
+feel of the application.

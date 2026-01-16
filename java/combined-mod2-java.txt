@@ -1,0 +1,711 @@
+Welcome to Introduction
+to Arrays. After watching this video, you will be able to describe the fundamental concepts
+of arrays in JavaScript, and examine common use cases and methods for
+working with arrays. In JavaScript, an array is a data structure used to store and organize a
+collection of values. These values can be of
+various data types, such as numbers, strings, objects, or even other arrays. Arrays are one of the most commonly used data structures in JavaScript and play
+a crucial role in grouping related
+data together. Arrays in JavaScript
+are ordered, which means that
+the elements are stored in a specific sequence, and each element is accessible by its index or
+position in the array. It's important to
+note that arrays in JavaScript are zero-indexed, meaning the first
+element is at index 0, the second element is
+at index 1, and so on. You can access and manipulate individual elements within an
+array using their indices. Creating an array in
+JavaScript is straightforward. You can use square
+brackets to declare an array and store elements within it separated by commas. Here is an example of
+a JavaScript array named fruits with
+three elements; apple, banana, and cherry. Let's see how basic
+functionalities can be used with this array. Arrays are zero-indexed, so you can access elements
+using their index. In this example, a
+new variable named firstFruit is declared and assigned the value of fruits[0], which is apple, and
+another variable named second fruit is
+declared and assigned the value of fruits[1],
+which is banana. This is done by accessing
+the elements using their indices 0 and
+1, respectively. To find out how many
+elements are in an array, you can use the length property. For instance, this code will provide 3 as the array length. Arrays in JavaScript
+are mutable. This means that you
+can change, add, or remove elements after
+creating the array. Here, the line fruits[2] = strawberry modifies
+the third element at index 2 of the fruits array. It changes cherry to strawberry. As a result, the fruits
+array now contains apple, banana, strawberry, with strawberry replacing
+cherry as the third element. JavaScript provides a variety
+of built-in methods to perform operations on
+arrays, including push, pop, shift, unshift,
+splice, slice, concat, map, filter, and many more. These methods offer
+powerful ways to manipulate and
+work with arrays. In this example, fruits.push("orange")
+adds the element orange to the end of
+the fruits array. After this operation,
+the array becomes apple, banana, cherry, orange. Fruits.pop removes the last element from
+the fruits array. Since cherry is
+the last element, it is removed, resulting in
+the array apple, banana. Arrays can also
+contain other arrays, allowing you to create
+multidimensional arrays or complex data structures. This is a valuable feature
+for handling structured data. For instance, this code defines a JavaScript
+array named matrix. It contains three sub-arrays, each representing a row in a matrix and stored in a
+nested array structure. This type of data structure is useful for handling
+and processing two-dimensional data in
+applications and algorithms. Arrays are frequently
+used for various tasks, such as storing lists of items, iterating through data,
+implementing stacks and queues, managing data in tables
+and grids and much more. They are versatile
+and adaptable, making them a fundamental
+tool for developers. You can iterate through
+the elements of an array using loops,
+like for loops, or more modern methods like forEach map, filter, and reduce. Array iteration is
+a powerful way to process and manipulate
+array elements. In this video, you learned
+that JavaScript arrays are data structures used to store and organize
+collections of values. Arrays can contain various
+data types such as numbers, strings, objects, or
+even other arrays. Arrays in JavaScript
+are ordered, and elements are
+accessible by their index. The first element is at index 0, the second at index
+1, and so on. Arrays are versatile and used for tasks such as storing lists, data iteration, implementing
+data structures and more. Understanding how to
+work with arrays is a crucial skill for
+JavaScript developers.
+Welcome to Manipulating
+and Iterating Arrays. After watching this video, you will be able to identify the standard array manipulation
+methods in JavaScript, explain how to modify
+arrays using those methods, and describe the array
+iteration process. Arrays are fundamental data
+structures in JavaScript, and they often require
+manipulation and iteration to work with
+data effectively. JavaScript provides a wide range of built-in array
+methods that allow you to perform
+various operations on arrays without
+writing custom code. These methods can make
+array manipulation more efficient and convenient. JavaScript offers several
+built-in array methods to manipulate
+arrays efficiently, such as push, pop, shift, unshift, splice, concact, slice, indexOf, reverse, sort, and length property. Let's explore them in detail. The push method adds
+one or more elements to an array's ends and returns
+the array's new link. This example starts
+with an array of fruits containing
+two elements; an apple and a banana. You can use push method to add orange and strawberry to
+the end of the array, and the updated array
+has all four elements. The pop method removes the last element from an array
+and returns that element. In this example, there is an array of fruits
+with three elements. You can use the pop method to remove the last element, orange. The removed fruit variable
+stores the removed element. The shift method removes the first element from an array
+and returns that element. In this example, you have an array of fruits
+with three elements. Shift method removes the
+first element, which is apple, and the removed fruit variable stores the removed element. The unshift method adds one or more elements to
+an array's beginning, and returns the
+array's new link. This example starts
+with an array of fruits containing two elements. Unshift method is used to add apple and strawberry to the
+beginning of the array, and logs the updated array. The splice changes the contents
+of an array by removing, replacing or adding elements
+at a specific position. In this example, there is an array of fruits
+with three elements. Splice (1,1, "grape") replaces the element at index one
+which is banana with grape. The concat method combines
+two or more arrays to create a new array without
+modifying the original ones. In this example, you
+have two arrays, fruits and additional fruits. Concat method combines them into a new array called
+combinedFruits. The slice method returns a
+shallow copy of a portion of an array into a new array without modifying the
+original content. In this example, Slice (1, 3) creates a new array, slicedFruits containing
+elements from index 1-2, excluding index 3 of the
+original fruits array. The indexOf method finds the index of a specified
+element within an array. It returns the index of the first occurrence
+of the element, or minus one, if it is not
+able to find the element. In this example,
+indexOf banana returns the indexOf the
+first occurrence of banana in the fruits
+array, which is one. The reverse method reverses
+the order of elements, effectively reversing
+the array in place. In this example, you can use the reverse method to reverse the order of elements
+in the fruit array. The sort method is used to
+sort the elements of an array. By default, it sorts elements as strings and in
+lexicographic order, to sort numbers correctly, you can provide a
+comparison function. In this example, sort method is used first without
+a comparison function, resulting in a
+lexicographic sort. Then, sort method is used with a custom comparison function to sort the numbers correctly. The length property returns the number of elements
+in the array. You can use it to
+determine the size, or to resize an array
+by changing its length. In this example,
+numFruits is assigned the value of fruits.length,
+which is three. You can expand an array by
+changing its length property. In this case, the code sets the fruit array's
+length to five. JavaScript adds two undefined
+values to the collection, which is five elements. Adding undefined values
+is a way to increase the array size without
+explicitly adding new features. You can truncate an
+array by setting its length property
+to a smaller value. Reducing the length effectively removes elements from
+the end of the array. In this case, you set the
+fruits array's length to two, which removes the last element, cherry, from the array. Let's now learn about
+Array iteration. Iterating through an
+array is a common task, and JavaScript provides multiple
+methods to achieve this. One of the most basic
+and versatile ways is using a for loop. Let's see how to iterate through an array using a for loop. You have an array called fruits that contains four
+string elements. You use a for loop to iterate
+through the array and initialize the
+loop variable i to 0, and the loop continues as long as i is less than
+the collection link. Inside the loop, fruits[i] accesses the element at
+the current index i, and you can log it to the
+console using console.log. The loop runs from i=0 to i=3, accessing each element in the array and logging
+them to the console. In this video you
+learn that JavaScript provides a variety of built in array methods to manipulate
+arrays efficiently. Some standard methods are push, pop, shift, unshift, splice, concact, slice, indexOf, reverse, sort, and
+length property. These methods and techniques empower you to perform
+various operations on arrays from modifying
+their contents to efficiently iterating
+through their values. You can use a for loop to iterate through the
+elements of an array.
+Welcome to Array Methods. After watching this video, you will be able to describe the various JavaScript
+array methods and explain how to utilize array methods to transform and manipulate data
+within arrays. Arrays in JavaScript, come with a rich set
+of built-in functions, often called array methods, that simplify common
+array operations. These methods provide
+a convenient way to perform various
+operations on arrays, from iterating through their
+elements to filtering, transforming, aggregating, and searching for specific data. The common array
+methods used to handle various tasks are forEach, map, filter, reduce, and find. Let's explore these methods and understand how they work,
+and when to use them. The forEach method
+iterates through an array, and applies a provided
+function to each element. It's commonly used when
+you want to perform a specific action
+for each element, without creating a new array. Imagine you have an
+array of user objects and want to send a welcome
+email to each user. This JavaScript code sends welcome emails to
+users by iterating through an array of
+user objects and using a function.
+Here's a breakdown. This is a function that logs
+a welcome email message to console.log for a
+given email address. Const users
+created an array called users containing name and email. Users.forEach iterates
+through the array. For each user, it calls the sendWelcomeEmail function
+with the user's email. This defines an arrow
+function that takes the current user
+object as a parameter. This function logs
+a welcome message with the provided
+email to the console. As a result, you'll see
+messages in the console indicating that welcome
+emails have been sent to each user's
+email address. The map method creates
+a new array by applying a provided function to each element in the
+original array. It's perfect for
+transforming data without modifying
+the original array. Suppose you have an
+array of products, and want to extract their
+prices into a new array. The map method constructs and logs messages for each product, displaying the product name and price in the specified format. This code dynamically generates and logs messages
+for each product, displaying its name and price. Let's go through the
+code step by step. Const products declare
+an array with objects, each representing a product with name and price properties. The map method iterates
+through the products array, and executes the provided arrow function for each element, saving the element in
+the product variable. Console.log logs messages to the console within
+the map function, displaying product
+information. This template string replaces placeholders with actual values. The filter method
+creates a new array containing elements that
+pass a specified condition. It's useful for extracting
+specific data from an array. You have an array of
+products and want to filter out products as
+per the price range. Let's go through the
+code step by step. Const products declare a
+constant variable named product. This takes three parameters. Return products.filter, filters the product array based on the specified criteria. Const minPrice and const
+maxPrice set price threshold. Const filteredProducts,
+store the filtered products. This calls the function with the specified parameters to
+obtain the filtered products. Filtered products.forEach iterates through the
+filtered products, saving the element in
+the product variable. Console.log prints a
+message to the console. The code then
+filters and displays the product names and prices within the specified
+price range. The reduce method allows
+you to reduce an array to a single value by applying
+a function to each element. It's excellent for
+aggregating data. You have an array
+of order prices, and want to calculate
+the total order value. Let's break down the
+code step by step. Const orderPrices, stores
+the order price data. Const totalOrderValue, stores
+the total order value. OrderPrices.reduce, uses the reduce
+method to iterate through the array and
+accumulate the values. This is an arrow
+function that calculates the total by adding each price
+to the accumulated total. After iteration, the
+reduce method returns the final total order value stored in the total
+order value variable. Console.log prints the total
+order value to the console. As a result, the code calculates
+the total order value by adding up all the prices
+in the order prices array, and displays it in the console. In this case, the total
+order value is 160. The find method returns
+the first element in an array that satisfies
+a specified condition. It's useful for searching
+for specific data. You have an array
+of employees and want to find an employee
+with a specific ID. Let's go through the
+code step by step. Const employees, store employee data with
+various properties. Employees.find, searches for an employee based
+on the specific condition. This checks if the
+ID property of each employee object, e = 2. Console.log displays the result, \n creates line breaks
+for better formatting. Dollar sign interpolates and
+inserts employee objects. For example, ${employee.name} inserts the employee's name. As a result, the code will check whether an employee
+has an Eid equal to 2, and display the details using console.log and
+template literals. In this video, you learned that the forEach method
+iterates through an array executing a provided
+function for each element, often for side effects. The map method generates a new array by applying a
+function to each element, which is useful for
+data transformation. The filter method produces
+a new array with elements, meeting a specified condition, effectively filtering
+the original array. The reduce method
+consolidates array values into a single result using
+a provided function, commonly for calculating totals. The find method locates the first array element
+meeting a condition, returning that element, or undefined if there
+are no matches.
+[MUSIC] Welcome to Working with
+Two-Dimensional Arrays. After watching this video, you will be
+able to describe a two-dimensional array and explain how to create an interactive
+2D array using HTML, CSS and JavaScript. A 2D array,
+also known as a two-dimensional array, is collection of elements
+organized in rows and columns. It's a versatile data structure
+used in various programming and mathematical context. Each element in a 2D array is
+accessed using two indices, one for the row and another for the column. In JavaScript, you can create a 2D array
+by initializing an array of arrays, for example, this is a representation of
+a three-by-three 2D array of integers. To access a specific
+element in a 2D array, you need to provide both row and
+column indices. For example, to access the element
+in the second row and third column of this array with a zero-based index,
+you would use grid 1 ,2, which is 6. You can use nested loops
+to traverse a 2D array, this allows you to perform
+operations on each element or row. For instance, this is a nested loop structure where
+the outer loop i iterates through rows. And the inner loop j iterates
+through columns of the 2D array, printing each element's
+value along its position. 2D arrays are used in a wide
+range of applications, including representing game boards and
+grids, storing and processing images, managing data
+in spread-sheets and databases, solving mathematical problems
+such as matrix multiplication, and handling geographic data in maps and
+GIS systems. Let's now look at the following HTML,
+CSS, and JavaScript code that provides an interactive representation of
+a movie theater seating arrangement. This portion of the code defines a basic
+HTML structure with a div element, having the class seating chart to
+display the seating arrangement. Within the seating chart div, individual seats are represented as
+div elements with the class seat. These seats are given static
+labels like A1, A2, B1, and so on. When a seat is selected, the bookSeat
+row col function is triggered, passing the corresponding row and
+column indices of the clicked seat. Next, this portion of the code
+contains the CSS styles, used to visually style
+the theater seating chart. Let's break down the key styles, the .seating-chart class styles
+the container for the seating chart. It uses CSS grid to create a grid layout
+with three columns of 70 pixels each, a gap of ten pixels, and
+content centered. The .seat class styles individual seats.
+It sets the width and height of each seat, centers the text, adds a one-pixel
+solid border, and changes the cursor to a pointer
+to indicate it's clickable. The .booked class styles booked seats.
+It changes the background color to red, sets the cursor to not-allowed to
+indicate it's not clickable, and changes the text color to white. Whereas the dot available
+class styles available seats. It changes the background
+color to light green. The .select-button class styles
+the select random seat button. It sets the width to 100%,
+adds padding and margin, changes the background color to blue,
+sets the text color to white, removes the border, and
+changes the cursor to a pointer. Lastly, this JavaScript section of
+the code handles the functionality for booking seats in
+the theater seating chart. Let's break down the key aspects, the theater seating arrangement is defined
+as a 2D array called theaterSeats. It contains X for booked seats and O for available seats. This array is
+used to manage seat availability. bookSeat(row, col) function is
+called when a seat is clicked. It checks if the selected
+seat is available, books it by changing its class to booked,
+and displays an alert message. This function updates the class of
+a seat div to reflect its status, available or booked. When the selectRandomSeat button is
+clicked, the bookRandomSeat function finds all availableSeats, randomly selects one,
+books it, and displays an alert. If all seats are already booked,
+it alerts that all seats are taken. This code allows you to interact with the
+seating arrangement by clicking on seats to book them or
+using the Select Random Seat button to automatically book
+a random available seat. It's a simple representation
+of a movie theater seating chart with booking functionality. In this video, you learn that a 2D array, also known as a two-dimensional array,
+organizes elements in rows and columns. It's a versatile data structure used in
+programming and mathematical contexts. Accessing elements in a 2D array
+involves using two indices, one for the row and
+another for the column. And HTML, CSS, and JavaScript can
+be used to create an interactive representation of a movie
+theater seating arrangement. [MUSIC]
+Welcome to Classes and
+Objects in JavaScript. After watching this video, you will be able to define a class and an object
+in JavaScript. Explain how to create
+classes and objects, and identify the
+difference between object literals and
+function constructors. Classes and objects are fundamental concepts in
+JavaScript that allow you to create an organized code in a more structured
+and reusable way. In JavaScript, you
+can work with classes and objects to model
+real-world functionalities. Let's delve into
+the definitions and relationships between
+classes and objects. A class is a blueprint or template for creating
+objects in JavaScript. It defines the structure and behavior by encapsulating data, or properties, and methods, or functions that are common
+to a group of objects. Classes provide a way to
+model real-world entities, bringing a level of
+abstraction to your code. For example, a person class could define properties
+like name and age, and methods like say Hello. Objects are specific
+instances of a class created based
+on the class blueprint. They represent specific entities on unique values for the
+properties defined in the class. Objects encapsulate
+state or property values and behavior or methods
+in a single unit. For instance, you can
+create individual person objects such as person 1 with the name of John
+and an age of 30, and person 2 with the name
+of Alice and an age of 25. These objects have
+the structure and behavior specified
+by the person class. Now let's understand
+how to create classes and objects
+in Javascript. In Javascript, you
+can define a class using the class keyword.
+Here is an example. In this example, we've
+defined a person class with a constructor to initialize the first name and
+last name properties, and a get full name method
+to retrieve the full name. Next, let's look at an example of creating
+an object from a class. In this example, we've
+created an instance of the car class named myCar and called the
+startEngine method on it. Now let's explore
+creating objects using object literals and
+function constructors. Object literals are
+a way to create ad hoc objects without defining a class.
+Here's an example. In this example, we've created a person object with
+properties and a method. Function constructors are
+regular JavaScript functions used to create and
+initialize objects. It's a convention to name
+functional constructors with an initial capital letter. In this case, we have
+created a car constructor to create instances of car objects with properties for
+the make and model. The Car1 and Car2 objects
+represent different cars. We print their details
+using console.log. Let's distinguish between object literals and
+function constructors. Both object literals and function constructors can be used to create objects
+in JavaScript. Object literals are suitable
+for creating ad hoc objects, like storing individual customer orders with unique details. While function constructors are useful when you want to create multiple instances of objects with shared properties
+and methods. Such as creating instances of a Car object with shared
+properties like make, model and methods
+like Start engine. This makes them
+more suitable for scenarios where you
+need to model and manage multiple similar objects such as users,
+products, or vehicles. Object literals are suitable
+for scenarios where you need unique details for
+specific instances. Object literals
+provide quick creation of one off objects, while function
+constructors provide a more structured and
+organized way to create objects, making it
+easier to work with object oriented programming
+concepts in JavaScript. Object literals are also
+adaptable for various scenarios. In this video, you learned that JavaScript allows
+you to work with classes and objects to
+real world entities. A class serves as a blueprint for creating objects with shared
+properties and methods. You can create objects using classes or object literals for one-off instances and use function constructors
+for structured, shared properties and methods. Function constructors
+are ideal for creating multiple instances of objects with common
+characteristics. They offer a more organized
+approach to object creation, aligning with object-oriented
+programming principles.
+Welcome to Accessing
+Objects Properties. After watching this video, you will be able to describe the use of dot and
+bracket notations, define an array of objects and explain array iteration methods, and explain how a nested
+array and objects work. In JavaScript, you can
+access objects and their properties using
+dot or bracket notations. Let's explain how to
+access object properties. Dot notation is the
+most common way to access object properties. You use a dot followed
+by the property name. This example starts by defining an object named person with
+properties first name, last name, and age. The console.log
+statements display specific properties of an
+object using dot notation. Bracket notation is
+an alternative way to access object properties, especially useful
+when property names contain special
+characters or spaces. In this example, the console.log statements display
+specific properties enclosed in square brackets. Bracket notation is also handy when you need to access
+properties dynamically, such as with variables. Both dot and bracket
+notation serve the same purpose, accessing
+object properties. You can choose the one that best suits your needs
+and coding style. Let's now learn about
+arrays of objects. An array of objects is a common and powerful
+way to store and manage structured
+data in JavaScript. They allow you to organize
+and manipulate data in a structured manner by combining the features of both
+arrays and objects. Let's explore how
+to create, access, modify, and iterate
+through these arrays. You can create an array
+of objects by placing objects inside an array
+using square brackets. In this example, the
+student array contains objects representing a student with name and age properties. You can access elements
+within an array of objects using
+the array index, and then you can access object properties
+using dot notation. You can modify objects
+in the array by assigning new values
+to their properties. You can loop through
+an array of objects to perform operations
+on each object. Common methods for iterating
+through arrays include for loop and array
+methods like foreach. Let's first explore
+using a for loop. You can set up a for loop to
+iterate through the array. Within the loop
+console.log(students[i]. name) prints the name property of each object in the array. Now let's iterate using
+the foreach loop. The foreach loop iterates
+through an array of objects, students and outputs the name
+property of each object. You can add new objects to the array using the push method. You can also remove objects
+using the pop method. Array methods like
+filters and maps are powerful tools for working
+with arrays of objects. You can use them to filter and transform arrays of objects. You can search for objects
+within an array of objects using array
+methods like find. Now, let's examine a nested array of
+objects in JavaScript. Here is a breakdown of JavaScript
+code featuring objects. The first object represents
+a person named John. It includes
+properties like name, age, and hobbies. The address property
+is an object with properties like
+street, city, and zip. The second object represents
+a person named Alice. It consists of
+properties like name, age, an array of skills, and an array of projects. Each project in the
+project's array is an object with properties
+like title and completed. The third object is
+a generic object labeled as a special object. It includes properties
+like a title, an array called data, and an object called meta data. The fourth object is an empty object with
+no defined properties. The fifth object includes a Boolean property
+named another object, an array of nested arrays, and an additional
+string property called additional property. Let's break down and
+explain each line of code. This section focuses
+on accessing the first object's properties
+in the array of objects. ArrayOfObjects[0] retrieves the first object in the array.
+ArrayOfObjects[0].name retrieves the value of the name property in
+the first object, John. Array of objects[0].hobbies[0] retrieves the first element of the hobbies array
+in the first object: Reading. This section accesses the properties of the second object in
+the array of objects. ArrayOfObjects [1]
+retrieves the second object in the array.
+ArrayOfObjects [1]. skills[2], retrieves the third element of the skills array in the
+second object Node.js. ArrayOfObject[1]. projects[0]. title retrieves
+the title property of the first object in
+the projects array in the second object
+which is Project A. This section accesses
+the properties of the third object in
+the array of objects. ArrayOfObjects[2] retrieves the third object in the array. ArrayOfObject[2]. metadata.
+key retrieves the value of the key property in
+the metadata object in the third object which is value. This section accesses
+the properties of the fourth object in
+the array of objects. ArrayOfObjects[3] retrieves
+the fourth object in the array which
+is an empty object. This final section
+accesses the properties of the fifth object in
+the array of objects. ArrayOfObjects[4]. another
+object retrieves the value of another object property in the fifth object which is true. ArrayOfObjects[4].additional
+property retrieves the value of the additional
+property property in the fifth object Extra. In this video, you learned that objects can be accessed using dot notation or
+bracket notation. Dot notation involves using a dot followed by
+the property name, while bracket notation encloses the property name
+in square brackets. Arrays of objects
+are a powerful way to organize structured
+data in JavaScript. You can create, modify, and iterate through
+arrays of objects. Common methods include push, pop, filter, and map, which allow you to add, remove, filter, and transform
+objects within the array. You can also search for
+specific objects using the find method and a
+nested array of objects.
+[MUSIC] Welcome to introduction to string and
+string manipulation. After watching this video, you will be
+able to define the basics of JavaScript strings and explore various
+string manipulation techniques. Strings are a fundamental data type
+in JavaScript used to represent text. They can contain letters, numbers,
+symbols, and white space characters. Strings are enclosed in single or
+double quotes. You can also use backticks template
+literals to create strings, allowing for string interpolation. Let's explore how to work with strings and
+manipulate their contents for various JavaScript applications. You can concatenate strings
+using the + operator. The concatenation operator, +,
+in JavaScript is used to combine or join two or more strings together
+to create a single longer string. It allows you to append
+one string to another. In this example, the + operator
+concatenates the first name and greeting strings to
+create the full message. To determine the length of a string,
+you can use the length property. In this example, the spaces are also counted when
+calculating the string length. You can access individual characters
+within a string using bracket notation and a zero-based index. In this example, you have a string
+text with the value JavaScript. The second line is extracting the first
+character of the string using bracket notation and storing it in
+the variable first character. This expression accesses the character
+at the zero index of the string text. In JavaScript, string indices
+are zero-based, meaning that the first character is at index zero and the second
+character is at index one, and so on. So, text zero retrieves the character at
+the zero index of the string JavaScript, which is J, and assigns it to
+the first character variable. JavaScript provides methods to
+change the case of a string. For instances in this code, you start by defining a string called
+text with the value, Hello, World!. This line uses the two lowercase
+method on the text string. The two lowercase method is a built in
+string method in JavaScript that converts all characters in a string to lowercase. The results is assigned to
+the variable lowercase text and now holds the string in
+all lowercase letters. This line uses the two uppercase
+method on the text string. The two uppercase method is
+another built in string method that converts all characters
+in a string to uppercase. The result is assigned to
+the variable uppercase text, so uppercase text now holds the string
+in all uppercase letters. You can search for substrings within
+a string using methods like index of, last index of, and includes. In this example, first, you define
+a string sentence containing the text. The includes method checks if the string
+fox is found within the sentence. It returns true because fox
+exists in the sentence. The indexOf method returns the index or position of the first occurrence
+of fox in this sentence. It returns 16 because fox starts
+at index 16 in this sentence. To extract a portion of a string, you can
+use the substring slice or substr methods. They allow extracting specific portions
+based on character positions and provide flexibility. For instance, in this code, you have a
+string text with the value Hello, World!. The substring method extracts a portion of
+the text string starting from index 0 and ending before index 5. It retrieves the characters hello. The slice method extracts a portion of
+the text string starting from index seven until the end. It retrieves the characters world. The substr method extracts
+a substring starting from index 7 and spanning five characters. It retrieves the characters world. The replace method allows you to
+replace substrings with new values, allowing you to modify
+the string's content. In this example, you have a string
+text with the value Hello, World!. The replace method is
+used on the text string. It finds the first occurrence of world and
+replaces it with universe. The result is stored in
+the updated text variable. You can split a string into an array
+of substrings using the split method. It is handy for parsing data
+separated by a specific character or sequence of characters for
+further processing or analysis. In this example, we have a string
+csvData that contains data in csv or comma separated values format. It represents information about people, with each person's data separated by
+semicolons and individual attributes. The split method is used
+on the csvData string and takes the semicolon as the delimiter. It splits the string at each semicolon, creating an array where each element
+represents the data for one person. After splitting, the resulting peopleArray
+is an array of strings with each element containing the data for one person. The trim method removes leading and
+trailing white space from a string. It is especially useful for
+cleaning and formatting user input or working with data from external sources. For instance, in this code,
+you have a string text with leading and trailing spaces. Its length is determined by text.length,
+which includes the spaces and other characters, so
+the initial length is 15. The trim method is applied to
+text which removes leading and trailing white spaces such as spaces,
+tabs, and so on. The trim string is stored in trimmedText. The length of trimmedText is checked, which
+excludes the leading and trailing spaces. The length of trimmedText string
+is 8 as the spaces are removed. Template literals provide a powerful and
+readable way to format strings. Template literals
+are enclosed by backticks and allow you to embed expressions within
+the string using dollar sign syntax. The example calculates
+the total cost of widgets and uses template literals to
+construct an invoice string. In this video, you learned that key
+string operations include concatenation, length determination, and
+character access via index. Case changes with toLowerCase and
+toUpperCase. Substring searching with includes and
+indexOf. Extracting with substring slice and
+substr. Substring replacement with replace and
+string splitting into arrays with split. Whitespace trimming with trim. And complex string manipulation
+using template literals. Proficiency in these operations is crucial
+for effective text manipulation and data handling in JavaScript applications. [MUSIC]
+Welcome to Introduction
+to Math and Date Objects. After watching this video, you will be able to explain
+the significance of the math object and implement
+mathematical operations. Utilize date objects to extract specific date components and
+perform date arithmetic. Explain the use of timing
+functions in Javascript. In Javascript, the math
+object is a powerful built in global object that
+equips developers with a wide range of mathematical
+methods and constants. It serves as a toolbox
+for performing essential mathematical
+operations in your code. Here are some common
+operations you can achieve using math objects, rounding numbers,
+exponentation and logarithms, and random number generation. Let's explore each
+with examples. Math object provides
+functions for rounding numbers which are handy
+for various applications. In this example,
+const number equals 3.6 defines a variable
+number with the value 3.6. The math.round method, rounds numbers to
+the nearest integer, resulting in rounded
+being set to four. The math.ceil method rounds numbers to the nearest integer, setting ceil to four. The math.floor method rounds numbers to the nearest integer, setting floor to three. Math object is
+equipped to handle exponentation and
+logarithmic calculations. For instance, in this code, constant base = 2 defines a variable base
+with the value two. Const exponent = 3 defines a variable exponent
+with the value three. The math.pow method calculates the power of base
+to the exponent, resulting in power
+being set to eight. The math.SQRT method to calculate the square
+root of base, setting square root to
+approximately 1.41421356237. Math.log base uses the math.log method to calculate the natural logarithm of base setting natural log
+to approximately 0.69314718056. When you need
+randomness in your code, you can utilize the math object to generate random numbers. This code snippet creates a
+variable random that stores a random decimal number for use in your
+Javascript program. Let's look at an example
+that will help you understand how the math object and its methods can be used. This code creates a simple
+interactive web page. An h1 heading displays random quote generator
+as the page heading. A p element with
+the id qouteDisplay is initially empty
+for displaying the randomly selected quote. A button element labeled get quote has an on click attribute that triggers the
+Javascript function generate random quote when
+the button is clicked. The Javascript code
+within a script tag defines an array called quotes
+containing several quotes. A Javascript function called
+generate random quote, that is called when the
+Get button is clicked. The generate random
+quote function generates a random
+index using math dot random 0-1 and multiplies it by the length of
+the quote array. The result is then
+rounded down using math.floor to obtain a
+random integer index. It retrieves the quote at the random index and assigns it to the
+random quote variable, which then displays the
+randomly selected quote by setting the text
+content to randomQuote. Now let's learn about
+the date object. The date object in Javascript is a crucial tool for working
+with date and time values. It offers methods for creating, formatting, and manipulating
+dates and times. Let's delve into the date object and some of its primary methods. Date objects are used to represent specific
+moments in time. You can create them
+in various ways. This example shows the
+different ways to create date objects representing
+the current date and time, a specific date and a date calculated from
+milliseconds since the epoch date.
+Date objects provide access to individual
+components of a date, such as year, month, day, hour, and more. You can format date objects into human readable
+strings using methods like toLocaleDateString
+and toLocaleTimeString. Date objects allow for various date
+arithmetic operations including adding and
+subtracting time intervals. Let's now learn about
+the timing functions. Timing functions
+are essential for controlling the flow of
+your Javascript code. They enable you
+to create delays, schedule repetitive tasks,
+and manage animations. There are two types
+of timing functions, set timeout function and
+set interval function. Let's explore both in detail. The set timeout function
+schedules the execution of a function after a specified
+delay in milliseconds. In this example, the
+first argument is an anonymous function or a
+function without a name inside set time out that will
+be executed after a delay of 2000 milliseconds
+or two seconds. During the two second delay, the rest of the program
+continues to execute. After the delay, the function is invoked and it
+logs the message. This message appears after
+a delay to the console. Set interval is a built in Javascript function
+that schedules the repeated execution of a specified function at a
+specified time interval. For instance, this
+code demonstrates a simple interval
+based countdown that stops after six iterations. Count is initialized to zero, and set interval is used to
+create a repeating interval. The anonymous function
+inside set interval logs the current count to the console and increments it by one. It also checks if the
+count has reached six. If true, it stops using the interval using clear
+interval inter valid. The interval is set to 1,000
+milliseconds or one second. The console logs count x every second until
+count exceeds five. The intervalid variable holds the ID returned by set interval, allowing you to later clear the interval using clear
+interval when needed. This video you learned
+that the math object in Javascript provides methods and constants for
+mathematical operations. It includes rounding,
+exponentation, square roots, logarithms, and
+random number generation. The date object manages date and time values
+in Javascript, you can create date objects
+for specific moments, extract date components,
+format dates, and perform date arithmetic. Javascript has two
+key timing functions, set time out and set interval.
+As matrizes JavaScript são estruturas de dados usadas para armazenar e organizar coleções de valores.
+
+As matrizes podem conter vários tipos de dados, como números, strings, objetos ou outras matrizes.
+
+O JavaScript fornece uma variedade de métodos de matriz incorporados para manipular as matrizes de forma eficiente. Alguns métodos padrão são push, pop, shift, unshift, splice, concat, slice, indexOf, reverse, sort e length property. 
+
+Os métodos de matriz do JavaScript oferecem uma maneira conveniente de executar várias operações em matrizes, desde a iteração por seus elementos até a filtragem, a Transformação, a Agregação e a pesquisa de dados específicos.
+
+Uma matriz 2D organiza os elementos em linhas e colunas, servindo como uma estrutura de dados flexível em aplicativos matemáticos e de programação.
+
+HTML, CSS e JavaScript podem criar uma representação interativa da disposição dos assentos em um cinema.
+
+Classes e objetos são conceitos fundamentais em JavaScript que permitem que o senhor crie e organize o código de forma mais estruturada e reutilizável.
+
+A notação de ponto envolve o uso de um ponto seguido do nome da propriedade, enquanto a notação de colchete envolve o nome da propriedade entre colchetes.
+
+As matrizes de objetos são uma forma eficiente de organizar dados estruturados em JavaScript.
+
+Strings são um tipo de dados fundamental em JavaScript usado para representar texto. Elas podem conter letras, números, símbolos e caracteres de espaço em branco.
+
+O objeto math no JavaScript fornece métodos e constantes para operações matemáticas. O objeto date gerencia valores de data e hora em JavaScript.
+Cheatsheet: Arrays e Objetos em JavaScript
+Array e Objetos em JavaScript	Descrição	Exemplo de Código
+Declaração de Array	Arrays em JavaScript são ordenados, o que significa que os elementos são armazenados em uma sequência específica.	

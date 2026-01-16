@@ -1,0 +1,516 @@
+Welcome to Introduction to
+debugging in JavaScript. After watching this video, you will be
+able to recognize the significance of debugging in JavaScript, differentiate
+the various debugging techniques and tools, and explore the structure and
+purpose of try-catch block. Debugging in JavaScript is the process of
+of identifying and fixing errors, bugs and issues in your JavaScript code. These errors can include syntax errors,
+logical errors, runtime errors, and other issues that prevent your JavaScript
+program from functioning as intended. Let's look at some common techniques and
+tools for debugging in JavaScript. One, the simplest form of debugging
+involves adding console.log statements to your code. These statements allow you to
+print values, variables or messages to the browser's console. By examining these outputs, you can get
+insights into the flow of your program and the values of variables at
+different points in your code. Two, most modern web browsers come with
+built-in developer tools that allow you to set breakpoints in your JavaScript code. When a breakpoint is reached,
+the code execution stops and you can inspect variables, the call stack,
+and other relevant information. You can insert the debugger statement
+directly into your code to halt execution and trigger the browser's debugger. This is similar to setting breakpoints,
+but is initiated programmatically. Four, every major web browser,
+such as Google Chrome, Mozilla Firefox, Microsoft Edge, and Safari, includes developer tools that
+provide debugging capabilities. You can access these
+tools by pressing F12 or right-clicking on a web page and
+selecting inspect or inspect element. In the developer tools, navigate to
+the console tab for logging, sources or debugger tab for setting breakpoints,
+and Network tab for debugging network requests. Five, a try-catch block in JavaScript
+is a structured mechanism used for error handling. It allows you to manage and recover from runtime errors that might
+occur during the execution of your code. Now let's explore how
+the try-catch block works. The code that might generate an error
+is enclosed within a try block. This is the segment of code that
+you want to monitor for errors. Catch block, if an error occurs within the
+try-block, the catch block is executed. The catch block specifies
+how to handle the error. It takes an error object as a parameter
+which contains information about the error. The catch block can log the error,
+provide fallback behavior, or perform any other action
+to handle the error. Try-catch blocks are invaluable for
+debugging in JavaScript for the following reasons. Try-catch blocks allow you to isolate
+potential issues by wrapping specific code segments in try blocks you can focus on
+debugging those sections individually, making it easier to identify
+the root cause of errors. When an unhandled error
+occurs in JavaScript, it can lead to application crashes or
+abrupt behavior. Try-catch blocks prevent
+this by handling errors, allowing your application
+to continue running. Catch blocks provide a place
+to log error information. You can log error information to
+the console or send them to a server for detailed analysis. These logs are invaluable for
+debugging during development and diagnosing issues in
+production environments. The error object passed to the catch block
+contains valuable information such as the error type, message and stack trace. This information helps you understand what
+went wrong and where the error occurred. Catch block allows you to define fallback
+behavior or alternative code paths. This ensures that your application
+continues to function even when errors occur. You can use the throw statement within
+a try block to throw custom expectations based on specific conditions. This enables you to provide more
+meaningful error information, aiding in debugging. In web applications, try-catch blocks
+help create a user-friendly experience by preventing crashes and providing
+information error messages. Users see meaningful error messages
+instead of cryptic error popups. Try-catch blocks are not just for
+development, they are essential for diagnosing and addressing issues that
+occur in production environments. Logging and reporting errors in
+production helps developers track and resolve user reported issues. Let's now look at an example
+of what happens when you try accessing a property of an undefined
+object without using a try-catch block. In this code, we try to access a property,
+property of an undefined object object. This code will result in
+an unhandled error, and the script will terminate
+before reaching the message. This message will never be reached. Now let's handle the same
+scenario using a try-catch block. We use a try-catch block to
+attempt the property access. If an error occurs,
+it is caught by the catch block and we log an error message.
+Despite the error, the script continues to execute
+after error handling and the message program continues
+after error handling is logged. Let's look at another example where we
+attempt to access an undefined array element without using a try-catch block. In this code,
+we attempt to access an array element at an out of bounds index
+index 5 in an array R. This code will throw an error because you
+cannot access properties of undefined. And this message will never be
+reached will not be logged. Now let's handle the same
+scenario using a try-catch block. We use a try-catch block to attempt
+to access the array element. If an error occurs, it is caught by the
+catch block and we log an error message. Despite the error, the script continues
+to execute after error handling, and the message program continues after error
+handling is logged. In this video, you'll learn that try-catch blocks are essential
+tools for debugging in JavaScript. They provide a structured and
+organized approach to handling errors, logging error information,
+maintaining application stability, and enhancing the overall user experience. And by mastering these blocks,
+developers can efficiently identify, diagnose, and resolve issues in
+their JavaScript applications. [MUSIC]
+Welcome to Introduction to
+the Document Object Model. After watching this video,
+you will be able to define the document object model, DOM. Explain the purpose of $0 and
+identify the key node types and describe the importance
+of DOM in JavaScript. The document object model, or DOM, is
+a programming interface for web documents. It represents the web page so
+that programs like JavaScript can change the document structure,
+content, and style. It provides a structured
+representation of the web page, making it easier for developers to
+interact with and manipulate web content. Let's understand the DOM document,
+object, and model terms. The term document refers to a web page or any XML document such as HTML,
+XHTML, or XML. The DOM represents this document as
+a structured tree-like hierarchy with each part represented as a node. An object represents a JavaScript object
+that corresponds to an element, attribute, or content within the web document. Each DOM element is an element
+of the web page, accessible and manipulable using JavaScript. The model denotes the structured and
+abstract representation of a web document. Now let's explore how the DOM works. When a web page is loaded in a browser, the browser creates a DOM
+representation of the page's structure. It forms a hierarchical tree structure
+with the document's root as the top node. Document node is the top level node
+representing the entire web page. Element nodes represent HTML
+elements such as div, p, a, and form the bulk of the DOM structure. Attribute nodes represent attributes
+of HTML elements including id, class, and src. Text nodes contain the text
+content within elements. Before we dive into the different
+types of nodes and how they are used, let's first understand
+the special variable $0. $0 is a special variable that you can use
+in the browser's development console as a quick reference to the currently
+selected DOM element in the elements panel in web development. It is often used for debugging and
+inspecting elements in a web page. Here's how it works. To open the browser's developer tools, Right-click on an element in
+the web page and select Inspect. Alternatively, you can open
+developer tools by pressing F12, Ctrl+Shift+I or Cmd+Option+I on Mac OS. Once developer tools is open,
+navigate to the elements panel. Here, you can interact with and
+inspect the DOM elements of the web page. Next, you can use the console tab within
+developer tools to type commands in JavaScript. To reference the currently selected
+element in the elements panel, type $0 in the console. For example, if you have selected
+a div element in the elements panel and you type $0 in the console,
+it will refer to that div element. Once you have the element
+referenced with $0, you can interact with it using JavaScript. This includes accessing its properties or
+modifying its attributes. Now let's explore the different types
+of nodes that are used in DOM and their various purposes. The entire HTML document is
+represented as the document node. To access the entire document
+using the document object, Right-click on the paragraph you
+want to inspect in your browser and select Inspect from the context menu. Navigate to the console tab in
+the developer tools and declare a variable called document node using var
+documentNode = document in the console. Now the entire document is accessible
+through the documentNode variable. Type documentNode in the console and
+press Enter. You will be able to see
+the entire document object. An element node represents an HTML
+element within the document. One, to access the paragraph tag, select the paragraph you want
+to inspect and select inspect. Two, navigate to the console tab and
+enter $0. It will output the HTML code and
+details of that specific element. A text node represents the text
+content within an element. To retrieve the text of
+the selected element, in this case, a paragraph,
+use the $0.textContent command. This will give the text content,
+This is a paragraph. Attribute nodes represent
+element attributes and provide additional
+information about an element. One, to access the attributes, select the anchor tag you want
+to inspect and select inspect. Two, navigate to the console tab and
+enter $0.getAttribute("href"); command. This will give you the following output. You can also change the values
+of the attributes or modify them using this command. Now, if you access the attribute again,
+it will give you the updated output. A comment node represents an HTML
+comment within the document. To access the comment node,
+you must first retrieve a reference to the HTML element with the id
+attribute set to myDiv. To access the HTML comment code,
+you can now type the following codes in the console tab and receive the following
+details of that specific element. This code assigns the comment
+code to comment node and when you type commentNode in the console
+tab, you will receive this output. This code assigns the comment
+text to commentContent and when you type commentContent in the
+console tab, you will receive this output. A document type node represents
+the document type declaration, DOCTYPE in an HTML document. To access the document type, you can use the document DOCTYPE
+command in the console tab. This will provide the node type of
+the currently selected element and for the DOCTYPE HTML declaration,
+the node type is typically ten. The DOM is an integral part of JavaScript
+and web development for several reasons. The DOM provides a structured,
+hierarchical representation of web documents, enabling developers to
+interact consistently with web content. The DOM allows developers to swiftly
+respond to user actions in real time with JavaScript. Developers leverage the DOM to access and
+modify page content and structure. The DOM bridges browser differences,
+ensuring consistent functionality across various platforms and
+simplifying cross-browser compatibility. The DOM facilitates real-time content
+updates without requiring a full page refresh. The DOM allows developers to attach
+event listeners to the elements, enabling them to respond
+to user interactions. The DOM supports assistive
+technologies like screen readers and ensures inclusivity for
+users with disabilities. Dynamic and interactive features
+facilitated by the DOM, contribute to an improved user experience. In this video, you learn that the DOM
+is a programming interface that allows JavaScript to modify web
+document structure, content, and style. Document refers to web pages, objects corresponding to JavaScript
+objects representing elements, and model signifies the structured
+representation for programming languages. $0 is a special console variable for referencing the currently selected DOM
+element for debugging and inspection. DOM has various types of nodes
+like document, element, text, attribute, comment, and
+document-type nodes. And DOM is vital for structured access to
+web content, creating dynamic web apps, content manipulation, and enhanced user
+experience, among other functionalities. [MUSIC]
+[MUSIC]
+Welcome to Manipulating DOM Elements. After watching this video,
+you will be able to describe accessing and manipulating DOM elements
+using various methods and explain methods and
+manipulation actions using examples. Accessing the document object model or DOM means obtaining references to
+specific HTML elements on a web page. Once you access a part, you can
+perform actions like reading content, modifying attributes, or
+adding event listeners. This basic step in web development
+empowers you to manipulate a web page's content and behavior. Accessing elements in the DOM can
+be done using methods like one, getElementById, two,
+getElementsByClassName, three, GetElementsByTagName, and
+four, querySelector. Let's talk about each in more detail. getElementById is a method in JavaScript
+used to access a specific HTML element within the DOM based
+on its unique ID attribute. In the HTML code,
+there are two elements with ID attributes. The JavaScript code selects the HTML
+element with the ID main heading. The code then assigns the selected
+element, in this case the h1 part, to the variable heading element. The console.log(headingElement) statement
+logs the selected element to the console. This helps verify that the JavaScript
+successfully accesses the specific element. You can use the getElementsByClassName
+method in JavaScript to access multiple HTML elements within the DOM
+that share the same class name. In the HTML code, you have three
+paragraph elements in your HTML code. Two of them have the class
+attribute set to highlighted. One is a regular paragraph
+without the highlighted class. The JavaScript code use the
+getElementByClassName method to access all elements with the class name highlighted. The result is a collection of elements
+stored in the variable highlighted elements. The code then iterates through each
+element in the collection using a for loop. Inside the loop it sets the text content
+property of each element to this paragraph is highlighted while
+the regular paragraph remains unchanged. You can use the getElementsbyTagName
+method in JavaScript to access multiple HTML elements within
+the DOM based on their tag name. In the HTML code,
+you have three elements in your HTML code, one h2 element, and
+two paragraph elements. The JavaScript code uses
+getElementsByTagName to access all paragraph elements. The result is a collection of elements
+stored in the variable paragraphElements. The code then logs the entire
+collection to the console and separately logs each paragraph element. querySelector is a versatile method
+in JavaScript used to access HTML elements within the DOM
+based on CSS-like selectors. In this HTML code,
+you have three elements in your HTML code, two paragraph elements,
+and one div element. One of the paragraph elements
+has the class highlighted and the other has the ID, my-paragraph. The JavaScript code uses querySelector
+to select specific elements, this selects the first element
+with the class highlighted. This selects the element with
+the ID my-paragraph. This selects the first div elements on the page. Now that you have learned
+about accessing DOM elements, let's explore DOM manipulation. Manipulating elements using the DOM
+refers to changing the structure, content, attributes, or
+styles of HTML elements within a web page. Everyday actions involved in
+manipulating elements using the DOM include modifying the text or
+HTML contents of elements. Suppose the HTML code has
+the following command, you have a paragraph element with
+the attribute ID set to my-paragraph. The content of the paragraph
+is "This is some text." This JavaScript code selects a paragraph
+by ID and changes its text content. The expected output is an HTML paragraph
+displaying "This is updated text." You can also alter
+the attributes of each element, which can affect their behavior or
+appearance. Suppose you have the following HTML code, you have an image element with
+an attribute ID set to my-image and an src attribute pointing to
+an image file named old-image.jpg. This JavaScript code selects
+an image by its ID and changes the src attribute
+to load a new image. The expected output is an updated
+image displayed on the web page. You can dynamically add new
+elements to the page or remove existing ones based on user
+interactions or other conditions. Suppose you have the following HTML code.
+This code consists of an unordered list with an attribute ID set to my-list,
+inside the ul, there are two list items, one with the content item one and
+another with the content item two. This JavaScript code selects an unordered
+list, creates a new list item, adds text content, and appends it to
+the list using the appendChild method. The expected output is an updated
+list with three items. You can also set up event listeners on
+elements to respond to user interactions. Suppose the HTML has the following code. This JavaScript code adds a click
+event listener to a button. When you click the button,
+a button clicked alert is displayed. You can change the order of
+elements within a parent container, which affects their
+display order on the page. Suppose the HTML code has
+the following command. This code selects a container div and
+reorders the two paragraphs, making the second paragraph
+the first child of the div. The expected output is
+the first paragraph, followed by the second paragraph. You can also create copies
+of existing elements and insert them elsewhere in the document. Suppose the HTML code has the following
+command. This code selects a list, clones the first list item, and attaches
+the cloned item to the end of the list. The expected output is an updated
+list with three identical list items. In this video, you learned that,
+accessing the DOM involves obtaining references to
+specific HTML elements on a web page. Methods for
+accessing elements include getElementById, getElementsByClassName,
+getElementsByTagName, and querySelector. Manipulating elements using the DOM
+is the process of making changes to the structure, content, attributes, or
+styles of HTML elements within a web page. And it involves changing content,
+altering attributes, setting up event listeners, changing
+order, and creating copies of elements. [MUSIC]
+
+[MUSIC] Welcome to Introduction to
+Browser Object Model (BOM). After watching this video,
+you will be able to, define Browser Object Model, BOM,
+and identify critical components, explain steps to integrate BOM with HTML,
+and differentiate between DOM and BOM. The browser Object model BOM
+in JavaScript, is a crucial aspect that provides a structured way
+to interact with the web browser. It allows you to control browser behavior,
+manipulate the browser window, and access client-specific information. Unlike the document object model (DOM),
+which represents the web page's content, the BOM deals with
+the browser's environment. Some of the key components of
+BOM are as follows, window, document, navigator, screen,
+history, and location. Let's learn about each in detail. The Global Window object represents
+the browser window or tab, and serves as the root of the BOM. All Global JavaScript objects and
+functions are part of the window object. The window object encompasses
+various properties and methods. For instance, window.alert (message)
+displays a simple alert dialog, window.confirm (message),
+shows a confirmation dialog, and window.open (url, name, specs, replace)
+opens a new browser window or tab. You can also close the current
+window with a window.close, and manipulate the current URL
+using the window.location. The window object extends its
+functionalities with features like setTimeout, for delayed function
+execution and storage options, such as localStorage, and
+sessionStorage for client-side data storage. Additionally, window.history provides
+access to the browser session's history. While the document object is primarily
+part of the document Object model DOM, closely related to the BOM, it represents
+the web page within the browser window. The navigator object gives information
+about the client's browser, including the browser's name,
+version, and supported features. The screen object details the user's
+screen, including its dimensions and color depth. The history object represents
+the browser's session history, enabling navigation in
+the user's browsing history. The location object provides information
+about the current URL, and allows manipulation of the URL, facilitating
+redirection to other web pages. The browser object model proves
+versatile in various scenarios, including user interaction through alerts
+and confirmations, window control, navigation between web pages,
+accessing client information, and data storage using local storage and
+session storage. To integrate BOM methods with HTML,
+follow these steps. Begin crafting an HTML document
+with the necessary structure, and a script element for
+embedding your JavaScript code. Include HTML elements such as buttons,
+to trigger BOM methods. Develop a JavaScript file, for example, yourscript.js containing the code for
+employing BOM methods. Link this file to your HTML
+document using the script tag. Open your HTML file in a web browser
+to interact with the buttons, and witness the BOM methods. Clicking the buttons,
+triggers the associated BOM methods. In web development,
+the document object model (DOM) and browser object model (BOM),
+serve distinct purposes. The DOM represents a web
+page's structure and content, offering a hierarchical,
+easy access and manipulation model. Meanwhile, the BOM provides access to
+browser specific features, settings, and behaviors, enabling control over windows,
+navigation, and user interactions. The DOM consists of a tree-like structure
+of HTML elements, attributes, and text nodes,
+representing the web page's content, accessible through the document object. The BOM includes various objects and
+features like a window, navigator, screen, history, and location, providing access to browser-specific
+information and functionalities. Primarily, the DOM allows dynamic
+manipulation of HTML elements, including text, attributes,
+styles, and structure. Meanwhile, the BOM goes beyond content,
+empowering control over browser features like alerts, windows,
+history, and client information. DOM is organized hierarchically and
+represents HTML elements, attributes, and text nodes as notes,
+forming a structured layout. In contrast, the BOM lacks a hierarchical
+structure with loosely related objects offering independent access. Accessing the DOM involves interacting
+through the document object, like using document.getElementById
+Element ID. For the BOM, direct interaction with
+objects occurs through the window object, for example, window.alert,
+this is an alert. Lastly, DOM usage includes modifying text
+content, adding or removing HTML elements, updating attributes, changing styles,
+and handling events within the web page. BOM usage includes opening
+new browser windows or tabs, controlling browser history,
+displaying alerts, managing client information, and
+handling browser-specific tasks. In this video, you learn that,
+the browser object mode, or BOM, includes vital components like the window,
+document, navigator, screen, history,
+and location objects. BOM facilitates user interaction,
+window control, navigation, client information access,
+and data storage. Integrating BOM methods with HTML,
+involves creating an HTML document, a JavaScript file, and
+testing in a web browser. The DOM focuses on the structure and
+content of web pages, while the BOM deals with browser
+specific functionalities. Both DOM and BOM are essential for
+building interactive and user friendly web application. [MUSIC]
+Welcome to Traversing the DOM. After watching this video, you will be
+able to explain the significance of traversing the DOM and identify how DOM
+traversal facilitates navigation and manipulation of HTML elements. The process of traversing the DOM or
+document object model, involves navigating and manipulating the structure and content
+of an HTML document using JavaScript. The DOM represents a web page as
+a hierarchical tree of objects, where each HTML element
+is a node in the tree. Traversing the DOM allows you to
+programmatically access, manipulate, and interact with these nodes. Various methods and
+techniques are commonly employed to facilitate a better understanding of
+traversing the DOM in JavaScript. These include: navigating parent and
+child elements, navigating sibling elements, finding elements within a container, traversing up and
+down the DOM tree. Let's explore each in detail. Navigating parent and
+child elements within the DOM involves moving up and down the tree-like structure of
+an HTML document using JavaScript. This process is crucial for accessing and manipulating relationships
+between elements. Several methods and properties are commonly
+used for navigating parent and child elements. ParentNode property is used to access
+the parent node of an element. It allows movement up one level in the DOM tree to access elements containing or
+surrounding the element. For example, you can use element.parentNode
+to retrieve the parent element of the current element. ChildNodes property returns a NodeList
+containing all child nodes of an element. ChildNodes can include elements,
+text nodes, comments, and other types of nodes that are direct
+descendants of the element. Individual child nodes are accessed
+using their index within the node list. FirstChild and lastChild properties
+allow access to the first and last child nodes of an element. These are useful for
+accessing the first and last elements or nodes within a parent element. Let's consider the following
+HTML structure. Here's how you can use the mentioned properties
+to navigate the parent and child elements. In this example, you start by selecting
+the parent element with the ID parent and then use the firstChild and lastChild properties to access
+the first and last child nodes. Now let's learn about navigating
+sibling elements. It involves moving horizontally within the
+hierarchical tree structure of an HTML document. This process allows access and manipulation of elements that
+share the same parent node. Key methods and properties include:
+nextSibling and previousSibling properties allow access to the next and previous
+sibling nodes at the same hierarchical level; include various node types such as elements,
+text nodes, comments, or other types. FirstChild and lastChild properties allow access to the first and last child nodes of the current element-- different from navigating siblings,
+as they go one level deeper into the hierarchical structure. Consider the following HTML structure,
+here's how you can use the mentioned properties to navigate the sibling and
+child elements. In this example, the code selects the
+middle paragraph element using this statement. It then uses the previousSibling
+and nextSibling properties to access the previous
+and next sibling nodes. The code also used the firstChild and
+lastChild properties, which return null in this case because the paragraph does
+not have child elements, only text nodes. This demonstrates that sibling navigation
+can include various node types, and you should handle them accordingly
+based on your specific use case. Finding elements within a container
+involves searching for and accessing HTML elements within
+a specific parent or container element. This is a common task in web development
+when working with a subset of elements within a particular section of a web page. Here are some key methods used for
+finding elements within a container. This method allows you to find the first
+element that matches the specified CSS selector within a given container. It returns the first matched element or
+null if no matching element is found. This is useful when you want to find
+a single element within a container that matches a specific criterion. This method returns a NodeList containing
+all elements that match the specified CSS selector within a given container. It returns an empty node list if
+no matching elements are found. This is useful for finding multiple elements within a container that match a specific criterion. Consider the following HTML structure. Here's how you can use the mentioned methods
+to find elements within the container. In this example, you start by selecting the container
+element with the ID container. By using this statement, you can then
+use the querySelector to find the first element within the container
+with the class "myClass", and querySelectorAll to find all elements
+within the container with the same class. Lastly, let's learn about traversing
+up and down the DOM tree. This involves navigating between parent
+and child elements, moving up and down the hierarchy of HTML
+elements within a web page. Methods and properties like parentNode,
+childNodes, firstChild, and lastChild are essential for
+these operations. In this video, you learned that
+traversing the DOM allows for programmatic access, manipulation, and interaction
+with HTML elements using JavaScript. Navigating parent and
+child elements involves moving up and down the tree-like structure
+of an HTML document. Navigating sibling elements entails moving
+horizontally within the hierarchical tree structure. Finding the elements within
+a container involves searching for and accessing HTML elements within
+a specific parent or container element. And traversing up and
+down the DOM tree is essential for navigating between parent and
+child elements. [MUSIC]
+Welcome to Styling DOM Elements. After watching this video, you will be able to define the concept of styling
+in the context of web development
+and explain how to use various methods to modify the style
+attribute of an element. Styling the DOM elements is crucial for dynamically changing the visual presentation
+of HTML elements on your web page using CSS properties and styles
+through JavaScript. This process enhances user interactions
+and responsiveness, helping to make changes such as altering elements, color, size, position, or visibility in response to user actions
+or other events. There are several
+methods for styling DOM elements using JavaScript. Here are some common ones:
+element.style.property, element.classList,
+element.setAttribute, element.styles.cssText, element.style.setProperty, and
+element.style.removeProperty. Let's explore each
+method in detail. You can directly access and
+modify the inline styles of an HTML element using
+the style property. This method is beneficial
+for dynamically adjusting the appearance of elements based on user
+interactions or events. For instance, in this example, you have a button element
+with the ID, myButton, and click me text
+in the HTML file, you can use the button variable to store the selected
+button element. The style property
+is then used to manipulate the inline styles
+of the button directly. This line sets the
+background color of the button to blue. This line sets the
+text color to white. This line sets the font
+size to 16 pixels. The class list property
+facilitates adding, removing, or toggling CSS
+classes on an element. This property is
+especially useful for applying
+predefined styles from CSS classes and enables the toggling of classes in
+response to user interactions. This example involves a
+div element with the ID, myDiv, and an initial
+class active. This div contains the
+text 'This is a div.' There is also a
+button element with the ID myButton
+labeled toggle class. You can use the
+classlist.toggle method to alternate between the active and inactive classes on
+the div element. This process means that each
+time you call the function, it alternates between adding
+or removing these classes. An if statement checks if the
+active class is present on the div element using the
+classlist.contains method. If the class is present, it sets the background
+color of the div to green. If it's not present, the code sets the background
+color to yellow. The setAttribute method
+allows you to set or modify the style attribute
+of an element using a string
+containing inline CSS. While effective, the
+set attribute process replaces the entire style
+attribute of an element. This method may be less
+suitable when you want to preserve existing styles while making specific
+adjustments. In this example, a
+paragraph element with the ID, myParagraph has an inline style setting
+the text color to red. The set attribute method sets the entire
+style attribute to change the text
+color to blue and the font size to 18 pixels. The CSS text property
+enables setting the entire inline style of an element using
+a single string. While convenient for adjusting multiple style properties
+simultaneously, it replaces the
+existing inline style. For instance, in this example, the paragraph
+element with the ID myText is stored in the text
+variable for easy access. The style.cssText method sets the text color to green
+and font weight to bold. The set property
+method allows setting a specific CSS property with
+an optional important flag. This flag ensures that
+the specified style takes precedence
+over other styles applied to the same element. In this example, a
+paragraph element with the ID myParagraph is selected and stored in
+the paragraph variable. You can use the setProperty
+method to set a specific CSS property. In this case, the
+color to purple and marks the specified change
+with the important parameter. This method ensures
+that this style takes precedence over other styles
+applied to the same element. Lastly, the remove
+property method is useful for selectively removing specific CSS properties from an element's inline style, this method provides
+a way to reset or adjust styling on
+a granular level. For instance, in this example, a paragraph element with the ID, myParagraph is selected and stored in
+the paragraph variable. You can use the remove
+property method to selectively remove a
+specific CSS property, in this case the font size from the inline styles
+of the paragraph. In this video, you learned that styling DOM elements
+using JavaScript allows you to dynamically change the visual presentation of HTML elements on your web page, elements.style.property directly modifies
+the inline styles of an element by setting
+CSS properties and values. Element.classList adds, removes, or
+toggles CSS classes on an element using class list. Element.setAttribute
+sets or modifies the entire style attribute
+of an element with a string containing inline
+CSS properties and values, element.style.cssText sets
+the entire inline style of an element using
+the CSS text property. element.styls.setProperty
+sets a specific CSS property. With an optional priority for
+an element's inline style. Ensuring it takes precedence
+over other styles and element.style.removeProperty removes a specific CSS property from an element's inline style, allowing you to reset or
+adjust styling selectively.

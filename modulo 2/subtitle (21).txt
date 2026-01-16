@@ -1,0 +1,58 @@
+[MUSIC] Welcome to the video Demo: Working
+with Branches using Git Commands. In this video, you will examine
+the functions of various git commands and how to manage git branches using commands. Branches allow you to work on features,
+experiments, or fixes independently in a structured and
+organized manner. The git branching workflow is
+crucial in version control and collaboration when working on
+software development projects. The workflow allows the teams to work
+on different features, bug fixes, or experiment in isolation without
+disrupting one another's code. Let us now focus on how to efficiently use
+git commands to facilitate the branching workflow process. To do so, first,
+let us clone the repository so that you can have a copy of that
+repository on your local machine. Navigate to the GitHub repository,
+then click Code and copy the URL under the HTTPS section in the terminal window
+and change to the target directory. When you want to create
+a copy of the repository, run the git clone command
+with the repository URL. Once you have the copy,
+you can create branches, make changes, and sync those changes.
+Changed to the directory that was cloned Now let us focus on
+the git branch command. Run the git branch command, followed by
+the desired branch name to create a new branch so that you can work on it
+without impacting the main code. Let's say that to create a branch
+named PATCH-1-ADDING-HEADERS, you will execute git branch
+PATCH-1-ADDING-HEADERS. The new branch created will be a copy
+of the branch you are currently on. Note that you will not be taken to
+the newly created branch automatically. To switch to branch
+PATCH-1-ADDING-HEADERS, use the git checkout
+PATCH-1-ADDING-HEADERS command. Now that you are on branch
+PATCH-1-ADDING-HEADERS, you can make your changes. While on
+the PATCH-1-ADDING-HEADERS branch, let's say you add a header such as
+welcome to KIV to your index.html file. Next, run the git status command to check
+the status of your working directory. This will highlight the modifications
+made to your index.html file. To stage the changes in your
+PATCH-1-ADDING-HEADERS branch, execute the git add index.html command. This command will specify that the changes
+are now ready to be committed. You can finally run the git commit
+-m command with the message Added header to save your changes. The -m in the git commit command
+adds a message to your changes. Now the changes in the index.html
+file are part of your PATCH-1-ADDING-HEADERS branch's history. Let us now focus on merging
+the PATCH-1-ADDING-HEADERS branch with the main branch.
+To do so, firstly, switch back to the main branch by
+running the git checkout main command. By doing so, you are no longer on
+the PATCH-1-ADDING-HEADERS branch. Now run the git merge
+PATCH-1-ADDING-HEADERS command. This command will integrate your changes
+from the PATCH-1-ADDING-HEADERS branch into the main branch. The header change from
+PATCH-1-ADDING-HEADERS is now incorporated into the index.html
+file located in the main branch. To make these changes accessible
+in your remote repository, use the git push -u origin main command. This command will push the main branch,
+including the changes merged from the PATCH-1-ADDING-HEADERS branch,
+to your remote repository. Finally, run the git status command to
+ensure the changes have been made and the branch is up to date. That's it. You have come to the end of this video. In this video, you learned how to effectively work
+with branches using git commands. You started by listing branches
+with the git branch command, then created the PATCH-1-ADDING-HEADERS
+branch using the git branch PATCH-1-ADDING-HEADERS command. Then you switched to the new branch using git checkout PATCH-1-ADDING-HEADERS
+command, made and staged changes using git status, git
+add index.html, git commit -m commands. And finally, merged PATCH-1-ADDING-HEADERS
+with the main branch using git checkout main and
+git merge PATCH-1-ADDING-HEADERS. You concluded this exercise by
+pushing the main branch to your remote repository using
+git push -u origin main. [MUSIC]
